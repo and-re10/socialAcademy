@@ -2,6 +2,7 @@
 const mongoose = require('mongoose');
 require('dotenv/config');// Sécuriser le connection a la base de données
 
+// Connection a la DATA BASE
 mongoose.connect(
     process.env.DB_CONNECTION, 
     { 
@@ -21,6 +22,14 @@ mongoose.connect(
 // Importations pour le server
 const express = require('express');
 const app = express();
+const cors = require('cors');
+const bodyParser = require('body-parser');
+
+// Création des Middlewares
+app.use(cors()); // 
+app.use(bodyParser.urlencoded({ extended: true })); // 
+app.use(express.json()); //
+
 
 // Création de la port de connection au server
 app.listen(3000, () => {
