@@ -30,6 +30,9 @@ app.use(cors()); //
 app.use(bodyParser.urlencoded({ extended: true })); // 
 app.use(express.json()); //
 
+// Créatio des Routes
+const userRoute = require('./routes/users');
+app.use("/api/", userRoute);
 
 // Création de la port de connection au server
 app.listen(3000, () => {
