@@ -32,7 +32,7 @@ app.use(express.json()); //
 
 // Créatio des Routes
 const userRoute = require('./routes/users');
-app.use("/api/", userRoute);
+app.use("/api/users/", userRoute);
 
 // Création de la port de connection au server
 app.listen(3000, () => {
