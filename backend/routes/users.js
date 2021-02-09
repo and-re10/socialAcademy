@@ -28,6 +28,7 @@ Router.post('/store', async (req, res) => {
     const user = new User({
         name: req.body.userName,
         age: req.body.userAge,
+        photo: req.body.userPhoto,
         role: req.body.userRole
     });
     
@@ -48,6 +49,7 @@ Router.put('/update/:userId', async (req, res) => {
         },{
             name: req.body.userName,
             age: req.body.userAge,
+            photo: req.body.userPhoto,
             role: req.body.userRole
         }); // (filter, data updated)
         res.send(user);

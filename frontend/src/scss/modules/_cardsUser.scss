@@ -1,0 +1,66 @@
+.r_cards {
+    justify-content: center;
+
+    .card {
+        max-height: max-content;
+        width: 250px;
+        border: solid 1px black;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        /* align-items: center; */
+        text-align: left;
+        padding: 0 20px;
+        background-color: rgb(10, 210, 143);
+        word-break: break-all;
+        margin: 30px 30px;
+
+        .img_card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0;
+
+            .box {
+                margin: 10px;
+                @include size(100px, 100px);
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+
+                .imgUser {
+                    @include size(94px, 94px);
+                    display: block; /* remove extra space below image */
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 3px;
+                    top: 3px;
+                    margin: auto;
+                    z-index: 1;
+                }
+                
+                .circle {
+                    display: inline-block;
+                    vertical-align: top;
+                
+                    @include size(100px, 100px);
+                
+                    border-radius: 100%;
+                
+                    @include border-gradient(red, green, 3px);
+                    // animation: rotateThis 1s linear infinite;
+                
+                    margin: auto;
+                
+                    position: relative;
+                
+                    z-index: 3;
+                }
+            }
+        }
+    }
+}

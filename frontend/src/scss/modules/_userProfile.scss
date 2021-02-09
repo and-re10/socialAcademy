@@ -1,0 +1,79 @@
+.link {
+    // text-decoration: none;
+    color: white;
+    
+    h2{
+        font: 100 30px/1.25em"Helvetica Neue", Helvetica, Arial, sans-serif;
+        margin-bottom: 50px;
+      
+        span {
+          font-weight: 300;
+        } 
+    }
+}
+.userProfile {
+
+    .card {
+        max-height: max-content;
+        width: 75%;
+        border: solid 1px black;
+        border-radius: 15px;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        text-align: left;
+        padding: 0 20px;
+        background-color: rgb(10, 210, 143);
+        word-break: break-all;
+        margin: auto;
+    
+        .img_card {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 100%;
+            padding: 20px 0;
+    
+            .box {
+                margin: 10px;
+                @include size(300px, 300px);
+                position: relative;
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+                justify-content: center;
+    
+                .imgUser {
+                    @include size(294px, 294px);
+                    display: block; /* remove extra space below image */
+                    border-radius: 50%;
+                    position: absolute;
+                    left: 3px;
+                    top: 3px;
+                    margin: auto;
+                    z-index: 1;
+                }
+                
+                .circle {
+                    display: inline-block;
+                    vertical-align: top;
+                
+                    @include size(300px, 300px);
+                
+                    border-radius: 100%;
+                
+                    @include border-gradient(red, green, 3px);
+                    // animation: rotateThis 1s linear infinite;
+                
+                    margin: auto;
+                
+                    position: relative;
+                
+                    z-index: 3;
+                }
+            }
+        }
+    }
+}
+
+

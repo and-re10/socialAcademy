@@ -1,0 +1,271 @@
+.App {
+  text-align: center;
+}
+
+.row {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.center {
+  justify-content: center;
+  align-items: center;
+}
+
+.circle:hover {
+  animation: rotateThis 1s linear infinite;
+}
+
+@keyframes rotateThis {
+  from {
+    transform: rotate(0deg) scale(1);
+  }
+  to {
+    transform: rotate(360deg) scale(1);
+  }
+}
+
+@keyframes psycho {
+  0% {
+    transform: rotate(0deg) scale(1) translate(0, 0);
+  }
+  33% {
+    transform: rotate(360deg) scale(1) translate(5px, 5px);
+  }
+  66% {
+    transform: rotate(720deg) scale(1) translate(-5px, -5px);
+  }
+  100% {
+    transform: rotate(1080deg) scale(1) translate(0, 0);
+  }
+}
+
+.containerStories {
+  display: flex;
+  padding: 50px 0;
+}
+
+.circles > * {
+  display: inline-block;
+  vertical-align: top;
+  margin: 10px;
+}
+
+.circles {
+  transform: translateZ(0);
+}
+
+body {
+  background-color: #222;
+  color: #fff;
+  text-align: center;
+}
+
+.container {
+  overflow: hidden;
+}
+
+h1 {
+  font: 100 50px/1.25em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 50px;
+}
+
+h1 span {
+  font-weight: 300;
+}
+
+.r_SBar {
+  background-color: #0ad28f;
+  border-radius: 15px;
+  margin: 0 20px;
+  margin-bottom: 100px;
+  justify-content: flex-start;
+  align-items: center;
+  padding-left: 50px;
+  position: relative;
+}
+
+.r_SBar .box {
+  margin: 20px 20px;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.r_SBar .box .circle {
+  height: 50px;
+  width: 50px;
+  box-shadow: 0 3px 0 1px rgba(64, 96, 0, 0.25), 0 -3px 0 1px rgba(192, 32, 0, 0.25), 3px 0 0 1px rgba(64, 96, 0, 0.25), -3px 0 0 1px rgba(192, 32, 0, 0.25), 3px -3px 0 1px rgba(128, 64, 0, 0.5), -3px 3px 0 1px rgba(128, 64, 0, 0.5), 3px 3px 0 1px rgba(0, 128, 0, 0.75), -3px -3px 0 1px rgba(255, 0, 0, 0.75);
+  display: inline-block;
+  vertical-align: top;
+  border-radius: 100%;
+  margin: auto;
+  position: relative;
+  z-index: 3;
+}
+
+.r_SBar .box .imgUser {
+  height: 44px;
+  width: 44px;
+  display: block;
+  /* remove extra space below image */
+  border-radius: 50%;
+  position: absolute;
+  left: 28px;
+  top: 14px;
+  margin: auto;
+  z-index: 1;
+}
+
+.r_SBar .box div {
+  display: flex;
+  position: relative;
+}
+
+.r_SBar .box div span {
+  font: "Helvetica Neue", Helvetica, Arial, sans-serif;
+  color: black;
+  font-weight: bolder;
+  width: 200px;
+  margin-top: 10px;
+}
+
+.r_cards {
+  justify-content: center;
+}
+
+.r_cards .card {
+  max-height: max-content;
+  width: 250px;
+  border: solid 1px black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  /* align-items: center; */
+  text-align: left;
+  padding: 0 20px;
+  background-color: #0ad28f;
+  word-break: break-all;
+  margin: 30px 30px;
+}
+
+.r_cards .card .img_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.r_cards .card .img_card .box {
+  margin: 10px;
+  height: 100px;
+  width: 100px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.r_cards .card .img_card .box .imgUser {
+  height: 94px;
+  width: 94px;
+  display: block;
+  /* remove extra space below image */
+  border-radius: 50%;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  margin: auto;
+  z-index: 1;
+}
+
+.r_cards .card .img_card .box .circle {
+  display: inline-block;
+  vertical-align: top;
+  height: 100px;
+  width: 100px;
+  border-radius: 100%;
+  box-shadow: 0 3px 0 3px rgba(64, 96, 0, 0.25), 0 -3px 0 3px rgba(192, 32, 0, 0.25), 3px 0 0 3px rgba(64, 96, 0, 0.25), -3px 0 0 3px rgba(192, 32, 0, 0.25), 3px -3px 0 3px rgba(128, 64, 0, 0.5), -3px 3px 0 3px rgba(128, 64, 0, 0.5), 3px 3px 0 3px rgba(0, 128, 0, 0.75), -3px -3px 0 3px rgba(255, 0, 0, 0.75);
+  margin: auto;
+  position: relative;
+  z-index: 3;
+}
+
+.link {
+  color: white;
+}
+
+.link h2 {
+  font: 100 30px/1.25em "Helvetica Neue", Helvetica, Arial, sans-serif;
+  margin-bottom: 50px;
+}
+
+.link h2 span {
+  font-weight: 300;
+}
+
+.userProfile .card {
+  max-height: max-content;
+  width: 75%;
+  border: solid 1px black;
+  border-radius: 15px;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  text-align: left;
+  padding: 0 20px;
+  background-color: #0ad28f;
+  word-break: break-all;
+  margin: auto;
+}
+
+.userProfile .card .img_card {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  padding: 20px 0;
+}
+
+.userProfile .card .img_card .box {
+  margin: 10px;
+  height: 300px;
+  width: 300px;
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.userProfile .card .img_card .box .imgUser {
+  height: 294px;
+  width: 294px;
+  display: block;
+  /* remove extra space below image */
+  border-radius: 50%;
+  position: absolute;
+  left: 3px;
+  top: 3px;
+  margin: auto;
+  z-index: 1;
+}
+
+.userProfile .card .img_card .box .circle {
+  display: inline-block;
+  vertical-align: top;
+  height: 300px;
+  width: 300px;
+  border-radius: 100%;
+  box-shadow: 0 3px 0 3px rgba(64, 96, 0, 0.25), 0 -3px 0 3px rgba(192, 32, 0, 0.25), 3px 0 0 3px rgba(64, 96, 0, 0.25), -3px 0 0 3px rgba(192, 32, 0, 0.25), 3px -3px 0 3px rgba(128, 64, 0, 0.5), -3px 3px 0 3px rgba(128, 64, 0, 0.5), 3px 3px 0 3px rgba(0, 128, 0, 0.75), -3px -3px 0 3px rgba(255, 0, 0, 0.75);
+  margin: auto;
+  position: relative;
+  z-index: 3;
+}
